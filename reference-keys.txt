@@ -1,0 +1,11 @@
+glosay
+eigenvector-based-centralities
+closeness-based-centralities
+betweenness-based-centralities
+basics-of-the-nodal-contribution-to-subnetwork-centrality
+correlations-between-nodal-contributions
+correlations-as-indicative-of-two-core-periphery-structure
+flux-based-analysis
+modeling-through-optimization
+the-stoichiometric-matrix-as-a-linear-transformation
+modeling-functional-states-in-metabolic-networks

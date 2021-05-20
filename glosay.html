@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>1 Glosay | Short human-metnet reference</title>
+  <meta name="description" content="Proyect reference." />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="1 Glosay | Short human-metnet reference" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Proyect reference." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="1 Glosay | Short human-metnet reference" />
+  
+  <meta name="twitter:description" content="Proyect reference." />
+  
+
+<meta name="author" content="Alejandro Acevedo-Aracena, PhD; Manuel Muñoz-González" />
+
+
+<meta name="date" content="2021-05-20" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+
+<script src="libs/header-attrs-2.7/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li> <img src="https://pseudo-dropbox.s3-us-west-2.amazonaws.com/Manu/calamar_3.png" alt="Calamar" width="300">  </li>
+<li><a href="https://github.com/DeepenData/clases">📄 ./source</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a></li>
+<li class="chapter" data-level="1" data-path="glosay.html"><a href="glosay.html"><i class="fa fa-check"></i><b>1</b> Glosay</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="glosay.html"><a href="glosay.html#eigenvector-based-centralities"><i class="fa fa-check"></i><b>1.1</b> Eigenvector-based centralities</a></li>
+<li class="chapter" data-level="1.2" data-path="glosay.html"><a href="glosay.html#closeness-based-centralities"><i class="fa fa-check"></i><b>1.2</b> Closeness-based centralities</a></li>
+<li class="chapter" data-level="1.3" data-path="glosay.html"><a href="glosay.html#betweenness-based-centralities"><i class="fa fa-check"></i><b>1.3</b> Betweenness-based centralities</a></li>
+<li class="chapter" data-level="1.4" data-path="glosay.html"><a href="glosay.html#basics-of-the-nodal-contribution-to-subnetwork-centrality"><i class="fa fa-check"></i><b>1.4</b> Basics of the nodal contribution to subnetwork centrality</a></li>
+<li class="chapter" data-level="1.5" data-path="glosay.html"><a href="glosay.html#correlations-between-nodal-contributions"><i class="fa fa-check"></i><b>1.5</b> Correlations between nodal contributions</a></li>
+<li class="chapter" data-level="1.6" data-path="glosay.html"><a href="glosay.html#correlations-as-indicative-of-two-core-periphery-structure"><i class="fa fa-check"></i><b>1.6</b> Correlations as indicative of two-core periphery structure</a></li>
+<li class="chapter" data-level="1.7" data-path="glosay.html"><a href="glosay.html#flux-based-analysis"><i class="fa fa-check"></i><b>1.7</b> Flux-based analysis</a></li>
+<li class="chapter" data-level="1.8" data-path="glosay.html"><a href="glosay.html#modeling-through-optimization"><i class="fa fa-check"></i><b>1.8</b> Modeling through optimization</a></li>
+<li class="chapter" data-level="1.9" data-path="glosay.html"><a href="glosay.html#the-stoichiometric-matrix-as-a-linear-transformation"><i class="fa fa-check"></i><b>1.9</b> The stoichiometric matrix as a linear transformation</a></li>
+<li class="chapter" data-level="1.10" data-path="glosay.html"><a href="glosay.html#modeling-functional-states-in-metabolic-networks"><i class="fa fa-check"></i><b>1.10</b> Modeling functional states in metabolic networks</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Publicado con Bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Short human-metnet reference</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="glosay" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Glosay</h1>
+<p><strong>Trail</strong>: A sequence of incident edges in which no link is repeated <a href="https://www.zotero.org/google-docs/?cX2T7s">(Borgatti, 2005)</a>.</p>
+<p><strong>Paths</strong>:  A sequence of incident edges in which neither link nor nodes can be repeated <a href="https://www.zotero.org/google-docs/?EpyVNh">(Borgatti, 2005)</a>. </p>
+<p><strong>A walk</strong>: Unrestricted sequence of incident edges.
+All paths are trails and all trails are walks.
+Can be modeled as a Markov process <a href="https://www.zotero.org/google-docs/?4It7K1">(Borgatti, 2005)</a>. </p>
+<p><strong>Types of node-to-node flow transmission:</strong> It considers the mechanics of dyadic diffusion, namely replication, and transfer.
+With regard to replication, this can be serial or parallel.
+Overall, this single categorical dimension has three types: transfer, serial duplication, and parallel duplication <a href="https://www.zotero.org/google-docs/?JU0Y9W">(Borgatti, 2005)</a>. </p>
+<p><strong>Kinds of trajectories flow can take:</strong> On one side, they consider whether or not flow moves in a deterministic manner, that is if flow takes the shortest path to a pre-determined target, or if it moves blindly in an undirected manner.
+Also, they consider which kind of graph-theoretic trajectories is used; geodesics, paths, trails, or walks. 
+ </p>
+<p><strong>Topology of a network:</strong> The pattern of interconnections among nodes. </p>
+<p><strong>Node degree:</strong> It is the number of edges linked to a node. </p>
+<p><strong>Centrality:</strong> The influence of a node on a given network property due to its topological context.
+It is the expected value or nodal score in an implicit model of nodal participation in network flows <a href="https://www.zotero.org/google-docs/?LcbEwG">(Borgatti, 2005)</a></p>
+<p><strong>Centrality as integration and influence:</strong> In general terms, a node’s centrality quantifies its influence or importance in the network.
+More precisely, centrality measures how well a node integrates into the network given its structural position.
+High centrality means that a node may exert control over other nodes. </p>
+<p><strong>Centrality analysis:</strong> Identification of (single) nodes that may control a given network function through topological effects.
+Different metrics emphasize distinct aspects of topological importance. </p>
+<p><strong>Adjacency matrix:</strong> A matrix representation of a network in which each entry encodes de presence of a weighted or binary connection (edge) between a unique pair of nodes <a href="https://www.zotero.org/google-docs/?BpQ9hV">(Fornito et al., 2016)</a></p>
+<p><strong>Undirected unweighted network:</strong> It is a network where the connections between nodes do not have direction nor weight.
+A binary adjacency matrix serves as its representation. </p>
+<p><strong>Cohesion matrix:</strong>  The entries of the adjacency matrix can contain other metrics different from length-one walks.
+These metrics extent to any measure that a pair of nodes can present, including greater walks, shortest paths, etc.
+This extended (generalized) definition of the adjacency matrix is known as the cohesion matrix. </p>
+<p><strong>Types and properties of walks:</strong> A binary adjacency matrix encodes the occurrence of links between pairs of nodes.
+More precisely, each of such entries denotes the presence (or absence) of a walk of length one that two nodes (reactions) may share. </p>
+<p><strong>A walk:</strong>  A continuous trajectory in a network that is allowed to visit the same nodes and links multiple times. </p>
+<p><strong>Walk type:</strong>  The type of restrictions placed on the walk of interest, which gives rise to other types of metrics such as paths, trails, shortest-paths, etc. </p>
+<p><strong>Walk property:</strong> distinction between volume or length of the walk type.</p>
+<p><strong>Volume:</strong> When one counts the number of walks of some type.</p>
+<p><strong>Length:</strong> When one measures the length of the walks. </p>
+<p><strong>Different kinds of cohesion matrices:</strong> Different kinds of cohesion matrices can be build by selecting different types and properties of walks.
+All serve to encode the cohesion between pairs of nodes (dyadic cohesion) in the network.</p>
+<p><strong>Node centrality:</strong>   A summarization of the amount of dyadic cohesion in which a given node participates in.
+In particular, this summarization is a mathematical reduction (mean or median, for instance) applied to a row of the cohesion matrix. </p>
+<p><strong>Different kinds of centralities:</strong> Since the cohesion matrix can be defined using different combinations of types and properties of walks, several sorts of centrality emerge.
+There are three kinds of centralities: degree-like, closeness-like, and betweenness-like. </p>
+<p><strong>Radial involvement</strong>: centralities in which the node of interest is at the center of the metric, which means that it is taken as the starting/ending point of any walk <a href="https://www.zotero.org/google-docs/?9pHP9c">(Borgatti and Everett, 2006)</a>. </p>
+<div id="eigenvector-based-centralities" class="section level2" number="1.1">
+<h2><span class="header-section-number">1.1</span> Eigenvector-based centralities</h2>
+<p>The number of walks in which a node participates as the starting or ending point in a given type of walk.
+Derived from cohesion matrices based on walk property of volume.
+These centralities count walks, which assume that trajectories can be circuitous and can revisit nodes and edges multiple times.
+Also, these measures assume that the flow can take several paths simultaneously <a href="https://www.zotero.org/google-docs/?L3rDnu">(Borgatti, 2005)</a>. </p>
+<p>Based on the properties of the (largest) eigenvector of the adjacency matrix, one can safely assume that a node associated with high eigenvector-based scored is adjacent to nodes that also have high scores.
+This allows the interpretation of eigenvector-based centrality as indicative of the influence over other nodes or susceptibility of being influenced by others <a href="https://www.zotero.org/google-docs/?TE1w9d">(Borgatti, 2005)</a>.
+This kind of centrality assumes that flow can move throughout (unrestricted) walks,  thus each node can receive or transfer flow via all its neighbors.
+Eigenvector-based centrality is indicative of the long-term direct and indirect influence <a href="https://www.zotero.org/google-docs/?F4sQo1">(Borgatti, 2005)</a>. 
+ </p>
+<p><strong>Eigenvector centrality (EC).</strong> accounts for the quantity and quality of a node’s connections by accounting for its degree and the degree of its neighbors <a href="https://www.zotero.org/google-docs/?ndDusv">(Bonacich, 1987; Fornito et al., 2016)</a>.
+For our reaction-projected undirected network with n nodes, the eigenvector centrality of node i (ECi) is proportional to the sum of the centralities of its neighbors.
+The eigenvectors (x) and eigenvalues () of the adjacency matrix (A) are employed for the calculation, where the eigendecomposition Ax=x rearranges into:</p>
+<p><span class="math display">\[
+\tag{1}
+EC_i=x_i=11j=1nA_{ij}x_j
+\]</span></p>
+<p>here, 1 is the leading eigenvector, i.e., the eigenvector corresponding to the largest (positive) eigenvalue <a href="https://www.zotero.org/google-docs/?AdVbtz">(Fornito et al., 2016; Newman, 2018)</a>.</p>
+<p><strong>Katz centrality (KC).</strong> It gives each node a baseline (constant) greater than zero centrality <a href="https://www.zotero.org/google-docs/?k2tEhX">(Katz, 1953)</a>.
+Such a basal amount of centrality is regardless of the node’s topological context, so that:</p>
+<p>KCi=xi=j=1nAijxj+                                                         (2)</p>
+<p>where α and β are positive scalars.
+These values control the balance between the pure eigenvector centrality and the basal amount of centrality.
+As recommended, we chooseto be one and fixed to be less than the inverse of the largest eigenvalue 1<a href="https://www.zotero.org/google-docs/?O08AIa">(Newman, 2018)</a>. </p>
+<p>The KC provides a solution to the problems encountered with ordinary eigenvector centrality in directed networks.
+However, there is no reason in principle why one cannot use KC in undirected networks as well, and there are times when this might be worthwhile.
+The idea of adding a constant term to the centrality so that each node gets some weight just by virtue of existing is a natural one.
+It allows a node that has many neighbors to have high centrality regardless of whether those neighbors themselves have high centrality, and this could be useful in some applications <a href="https://www.zotero.org/google-docs/?w77J3I">(Newman, 2018)</a>.</p>
+<p><strong>PageRank (PR).</strong> <a href="https://www.zotero.org/google-docs/?pk4Emg">(Page et al., 1999)</a></p>
+<p><span class="math display">\[
+PRi=xi=j=1nAijxjkjout+
+\]</span></p>
+</div>
+<div id="closeness-based-centralities" class="section level2" number="1.2">
+<h2><span class="header-section-number">1.2</span> Closeness-based centralities</h2>
+<p>Mainly, they account for the extent to which a node connects to others nodes via the shortest paths.
+A node with a short average path length can interact with many network elements via only a few links, suggesting that it is topologically central <a href="https://www.zotero.org/google-docs/?p4MPDY">(Fornito et al., 2016)</a>.
+Derived from cohesion matrices based on walk property of length. </p>
+<p>Closeness is based on the mean of all the distances from one node to the rest of the others, where the distance is usually the shortest path <a href="https://www.zotero.org/google-docs/?jOEn8B">(Freeman, 1978)</a>.
+Closeness may be interpreted as an index of the expected time of arrival of something moving throughout the network, assuming that it moves through the shortest paths or at least it tends to prioritize them <a href="https://www.zotero.org/google-docs/?daZilW">(Borgatti, 2005)</a>.
+A node that scores high in closeness is expected to be well-located to rapidly receive what is flowing through the network, as long as it manly flows via shortest paths and undergoes parallel duplication.
+In interpreting closeness as the time of arrival, it is implicitly assumed that the flow “knows” how to arrive at its destination  <a href="https://www.zotero.org/google-docs/?RQPYCi">(Borgatti, 2005)</a>. </p>
+<p><strong>Closeness centrality (CC).</strong> It measures the mean distance from a node to other nodes.
+Let dijbe the shortest distance from node ito j, then the mean distance fromito every node is:</p>
+<p><span class="math display">\[
+\tag{3}
+li=1n-1j=1ndij
+\]</span></p>
+<p>then, the CC for node iis <a href="https://www.zotero.org/google-docs/?HhGV2q">(Beauchamp, 1965)</a>:</p>
+<p><span class="math display">\[
+CCi=1li=n-1j=1ndij                                                         (4)
+\]</span>
+<strong>Information centrality (IC).</strong> <a href="https://www.zotero.org/google-docs/?uqLXx2">(Stephenson and Zelen, 1989)</a></p>
+<p>$$</p>
+<p>Ii=nj(Iij)-1</p>
+<p>$$</p>
+</div>
+<div id="betweenness-based-centralities" class="section level2" number="1.3">
+<h2><span class="header-section-number">1.3</span> Betweenness-based centralities</h2>
+<p>It indicates the node’s capacity for serving as a mediator (intermediate connection) between pairs of nodes.
+Betweenness-like metrics count the number of the pairwise walks (instances of connections between node pairs) in which the node of interest is involved as an interior node.
+In this sense,  betweenness-like centralities are considered measures of medial involvement.
+These measures assume that what flows from node to node is indivisible then should use one single path <a href="https://www.zotero.org/google-docs/?q9lTxH">(Borgatti, 2005)</a>.</p>
+<p>Betweenness is regarded as a measure of the amount (volume) of traffic moving from each node to every other that passes through a node of interest.
+Thus betweenness measures the extent to which a node of interest controls the flow between node pairs.
+These type of measures of centrality assumes the characteristics of a package delivery process, namely an indivisible quantity transferred mostly via geodesics from node to node that eventually arrives at its predefined destination <a href="https://www.zotero.org/google-docs/?CslIO1">(Borgatti, 2005)</a>.</p>
+<p><strong>Betweenness centrality (BC).</strong> It measures the proportion of shortest paths between all node pairs in the network that pass through a given index node <a href="https://www.zotero.org/google-docs/?jVQzML">(Freeman, 1977)</a>, so that:</p>
+<p>$$</p>
+<p>BCi=1n2stnstigst</p>
+<p>$$</p>
+<p><strong>Communicability betweenness centrality (CBC).</strong> This measure of betweenness considers the shortest paths between pair of nodes but also accounts for other longer paths.
+Specifically,  CBC counts the number of walks between nodes p and q in which the node r participates, weighting by the length of the path <a href="https://www.zotero.org/google-docs/?YvU1Ip">(Estrada et al., 2009)</a>, formally:</p>
+<p>$$</p>
+<p>Gpq=k=0(Ak)pqk!</p>
+<p>$$</p>
+<p>$$</p>
+<p>CBCi=1CpqGprqGpq,   C=(n-1)2-(n-1)</p>
+<p>$$</p>
+<p><strong>Flow betweenness centrality (CBC)</strong>.
+<a href="https://www.zotero.org/google-docs/?cwMYnI">(Freeman et al., 1991)</a></p>
+</div>
+<div id="basics-of-the-nodal-contribution-to-subnetwork-centrality" class="section level2" number="1.4">
+<h2><span class="header-section-number">1.4</span> Basics of the nodal contribution to subnetwork centrality</h2>
+<p><strong>The centrality of the energy metabolism:</strong>  It is a summarization (via geometric mean) of the single centralities of the reactions that belong to the cellular energy metabolism.</p>
+<p><strong>Cohesiveness:</strong> the concept of centrality but applied to groups of nodes.
+This is because centrality is a property exclusively to the single nodes.</p>
+<p><strong>Network cohesiveness:</strong> It summarizes all node centralities—the reduction of the cohesion matrix to a single quantity.</p>
+<p><strong>Subnetwork cohesiveness:</strong>  It is a summarization of a subset of node centralities. 
+How well integrated a group is. </p>
+<p><strong>Delta centrality:</strong> It is a centrality measure that assumes that the network response to removing a node determines the node’s importance.
+More precisely, delta centrality measures the variation of the network cohesiveness upon single node removal. </p>
+<ul>
+<li><strong>Interpretation (single node -&gt; whole network) 1:</strong>  It is the global contribution of a node to maintaining the network cohesiveness. </li>
+</ul>
+<p><strong>Nodal contribution to the centrality of the energy metabolism (single node -&gt; subnetwork):</strong> measures the variation of a subnetwork (energy metabolism) cohesiveness upon single node removal. 
+Find nodes that may control the integration (or level of participation) of a given subnetwork into the network.
+The latter allows us to find structural modulators of the energy metabolism. </p>
+<ul>
+<li><strong>Interpretation (single node -&gt; subnetwork) 2:</strong> It is the single nodal contribution to subnetwork cohesiveness. </li>
+</ul>
+<p><strong>Hub:</strong> It is a topologically central node.
+Different measures of centrality can distinguish between different types of hubs.</p>
+<p><strong>Consensus classification of hubs:</strong>  It is a robust classification of individual nodes.
+It is used when potential hubs have several topological characteristics.
+Findings that are not biased by any single definition of centrality. </p>
+</div>
+<div id="correlations-between-nodal-contributions" class="section level2" number="1.5">
+<h2><span class="header-section-number">1.5</span> Correlations between nodal contributions</h2>
+<p><strong>Positive nodal contribution:</strong> When the structural position of a node favors the centrality of the energy metabolism.</p>
+<p><strong>Negative nodal contribution:</strong> When the structural position of a node reduces the centrality of the energy metabolism.</p>
+<p><strong>Positive pair-wise correlation between nodal contributions:</strong> When both nodes positively, or negatively, contribute to the centrality of the energy metabolism.</p>
+<p><strong>Negative pair-wise correlation between nodal contributions:</strong> When one node positively contributes and the other contributes negatively, and vice versa.</p>
+</div>
+<div id="correlations-as-indicative-of-two-core-periphery-structure" class="section level2" number="1.6">
+<h2><span class="header-section-number">1.6</span> Correlations as indicative of two-core periphery structure</h2>
+<p>The negative correlation between two nodal contributions (to a subsystem centrality) means that one node belongs to a core-periphery structure while the other is outside of such a structure. 
+ </p>
+<p>The presence of nodes outside the core-periphery implies that the whole network is sparse.
+Removing such foreign nodes becomes the network more integrated.
+Then foreign nodal contributions are expected to be negative.
+Our metabolic subsystems are located inside a core-periphery structure, that is the cell where they belong, but outside the core-periphery of the other cell.
+Hence, nodal contributions coming from inside the core-periphery would positively affect the centrality of their own subsystem.
+On the other hand, nodal contributions coming from outside would negatively impact the centrality of such a subsystem.
+More precisely, the presence of foreign nodes implies that the subsystem is poorly integrated into the whole network.
+Thus by removing such nodes the subsystem will be better integrated into the rest of the network.
+In this sense, a negative correlation between two nodal contributions indicates that one node is inside the core-periphery where the subsystem belongs while the other is outside. </p>
+<p>Since each cellular metabolism is characterized by a core-periphery structure, and pairwise correlations between nodal contributions allow to distinguish whether or not the pair of nodes belong to the same core-periphery, such correlations predict to which cell each node belongs.
+These results show that our method effectively assesses the integration of a cellular subsystem to the rest of the network.
+Therefore, such a method can be useful to find topological modulators of the subsystems for our case, which may control the energy metabolism at the network-wise level.
+Such modulators can be associated with enzymes or transporters that can be sensible targets for therapy or investigation. </p>
+</div>
+<div id="flux-based-analysis" class="section level2" number="1.7">
+<h2><span class="header-section-number">1.7</span> Flux-based analysis</h2>
+<p><strong>Genome-scale reconstructed metabolic networks:</strong> These are curated and systematized knowledge base that collects all the available biochemical, genetic, and genomic information that is available for a given cellular metabolism <a href="https://www.zotero.org/google-docs/?sfgbZb">(Palsson, 2015; Price et al., 2004; Thiele and Palsson, 2010)</a>.</p>
+<p>Genome-scale models (GEMs): The translation of a reconstructed network into a mathematical formalism that allows computation and prediction of phenotypes.</p>
+<p><strong>Reduced costs:</strong>  It is the amount by which the objective function changes upon an increase in an internal flux.
+A reduced cost (ri) can be interpreted as the sensitivity of the objective function with respect to the change in the ith flux value.
+In biological terms, this can be interpreted in the following manner: If a flux Ji has a reduced cost of ri in a particular FBA solution and this flux value is increased by ΔJi, then the objective function value will be changed to Z + riΔJi <a href="https://www.zotero.org/google-docs/?kkBM48">(Maarleveld et al., 2013)</a></p>
+<p><strong>Constraints:</strong> Cellular functions are constrained by myriad different factors.
+Mathematically, constraints are described with balance equations and inequalities.
+The imposition of different constraints leads to a space of achievable metabolic states. </p>
+<p><strong>Constraint-based analysis methods:</strong> The fundamental equations describing the cellular events may be hard to formulate and define.
+Nonetheless, the boundary conditions or the constraints in which cells operate are easier to identify, state, and use <a href="https://www.zotero.org/google-docs/?wLjwjO">(Palsson, 2015)</a>. 
+these constraints are those in which functional states take place. </p>
+<p><strong>Functional states in metabolic networks: The cellular metabolism is</strong> subjected to several constraints, including those emerging from physicochemical laws and the environment.
+A variety of functional states are achievable under such constraints.
+The functional states correspond to the physiologically observable phenotypes.
+More precisely, any cellular metabolism has a characteristic state that one recognizes as a physiological (homeostatic) state.
+In this sense, the fluxes that account for such a functional state becomes the dominant variables.</p>
+<p><strong>Steady-state:</strong> The metabolic state where no accumulation nor depletion of metabolites is observed due to the balance between fluxes.
+<strong>T</strong>he state in which the internal metabolites are produced and consumed in a flux-balance fashion <a href="https://www.zotero.org/google-docs/?VWFa4d">(Fang et al., 2020)</a>.</p>
+<p><strong>The steady-state assumption:</strong> Despite networks are not strictly in steady-state, many homeostatic states are close to being steady, and over time-averaged, flux balances satisfy the steady-state.
+Such a feature makes flux balance analysis quite useful for study functional metabolic phenotypes <a href="https://www.zotero.org/google-docs/?MhytCd">(Palsson, 2015)</a>. </p>
+<p><strong>Time-scale hierarchy and fast subsystems, quasi-steady states:</strong> Usually, it is assumed that fast subsystems are in a quasi-steady state.
+This means that the subsystem is in a steady-state internally but has inputs and outputs to which the balance is not zero.
+For instance, uptake rates and metabolite excretions can be net flux while the internal metabolism is in steady-state  <a href="https://www.zotero.org/google-docs/?fzvgk9">(Palsson, 2015)</a>.
+Hence, one can state that cellular metabolism adjusts its fluxes rapidly upon changing enviroments. </p>
+<p>Cytosolic ATP and ADP levels are unperturbed across a wide range of physiological workloads, indicating strong flux coupling among sodium efflux and oxidative phosphorylation<a href="https://www.zotero.org/google-docs/?9FzG6r">(Baeza-Lehnert et al., 2019)</a><strong>.</strong> The connectivities created between the reactions are ‘soft’ since the reactions in which a metabolite participates can have varying flux levels with no fixed ratios <a href="https://www.zotero.org/google-docs/?Lj076o">(Palsson, 2015)</a>.</p>
+<p>Subsystem in a metabolic network: A segmentation in the network into subnetworks by drawing “virtual” boundaries. </p>
+<p><strong>The role of regulation:</strong>  Cells have to have mechanisms able to select for physiologically relevant states.
+A  way to select useful states is the deployment of regulatory networks.
+Regulatory mechanisms entail the expression of the “suitable” metabolic phenotype.
+This is attained by regulating the expression of genes or by regulating the activity of enzymes. </p>
+</div>
+<div id="modeling-through-optimization" class="section level2" number="1.8">
+<h2><span class="header-section-number">1.8</span> Modeling through optimization</h2>
+<p><strong>Genome-scale metabolic reconstruction:</strong> A curated, systematized, and validated knowledge base of all reactions and metabolites occurring in a given cellular metabolism.</p>
+<p><strong>Constraints-based metabolic model:</strong> The computation of metabolic flux can be done from a mathematical model of the metabolic network. 
+This model is based on stoichiometric, thermodynamic, and physicochemical constraints.</p>
+<p><strong>Stoichiometric matrix:</strong> The most fundamental element of a constraint-based metabolic model is the stoichiometric matrix.
+The matrix’s entries correspond to the stoichiometric coefficients of substrates and products (metabolites).
+Each row in the matrix represents a metabolite, while each column denotes a reaction (exchanges and interchanges are also considered in this category); thus, a coefficient is present if a metabolite participates in a given reaction. </p>
+<p>Each column of the S matrix represents a reaction (or transport) and is constrained by the principles of physics and chemistry, such as mass balance.
+On the other hand, every row describes all reactions in which the corresponding metabolite participates, hence rows indicate how reactions are connected   <a href="https://www.zotero.org/google-docs/?sgNCBq">(Palsson, 2015)</a>.</p>
+<p>The S matrix, by definition, is a connectivity matrix that encodes the topology of a network.
+This structural information results in the definition of pools and pathways that are associated with the null spaces of S.
+All the elements of the matrix are in the same order of magnitude and are integers, making it a numerically well-conditioned matrix   <a href="https://www.zotero.org/google-docs/?VEMyAJ">(Palsson, 2015)</a>.</p>
+</div>
+<div id="the-stoichiometric-matrix-as-a-linear-transformation" class="section level2" number="1.9">
+<h2><span class="header-section-number">1.9</span> The stoichiometric matrix as a linear transformation</h2>
+<p>In order to compute fluxes, the stoichiometric matrix (S) is associated with a vector of fluxes (v); thus, the mass metabolite balance can be represented as de multiplication between both (S<em>v).
+If one assumes no depletion nor accumulation of metabolites (steady-state) and that S is square, the system of equations (S</em>v=0) may be solved, and the fluxes compute.
+However, constraints-based metabolic models yield more reactions than metabolites, meaning data S is rectangular.
+Then, one ends up with a solution space of flux vectors (feasible steady-state solutions). </p>
+<p><strong>FBA:</strong> In order to determine a unique flux vector, henceforth metabolic state,  optimality conditions can be imposed.
+It can be assumed that the most probable metabolic state is that where fluxes are optimized to satisfy a given metabolic objective.
+In this sense, an objective function is defined, while the steady-state equations serve as constraints.
+Once solved, the solution of the objective is associated with an optimal metabolic state. </p>
+<p><strong>Incidence matrix:</strong> The matrix S also can be interpreted as an incidence matrix of a bipartite graph.
+Here, the stoichiometric coefficients are interpreted as weighted links between two groups of nodes (partitions), namely the metabolites and the reactions. </p>
+<p><strong>Unipartite projection:</strong> Since we are interested in finding critical enzymes, the incidence matrix was converted to its unipartite projection of the reaction.
+In this new matrix, the entries denote the number of metabolites that two reactions have in common, and the diagonal is set to zero.
+The unipartite projection can be viewed as the weighted adjacency matrix of the reactions. 
+Since we are interested in the fundamental structure of the network, avoiding any information about the function, we binarized the weighted adjacency matrix of the reactions. </p>
+</div>
+<div id="modeling-functional-states-in-metabolic-networks" class="section level2" number="1.10">
+<h2><span class="header-section-number">1.10</span> Modeling functional states in metabolic networks</h2>
+<p>The metabolic phenotype of a cell is the set of all functional states that the metabolic network can present.
+The metabolic phenotype results from the genetic programs of the cell type and the environmental variables.
+The realization of a specific functional state depends on the regulatory events that take place in given circumstances.
+Functional states are modeled via an objective function that allows computing the distribution of fluxes that best comply with the objective function.
+Objective functions are useful to model biological states where is a certainty that the metabolic network optimizes a defined subset of fluxes and operates under a pseudo-steady state.</p>
+
+</div>
+</div>
+
+
+
+
+
+
+
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": false,
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/DeepenData/clases/blob/master/01-glosary.Rmd",
+"text": "Editar"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
